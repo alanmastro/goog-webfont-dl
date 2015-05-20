@@ -264,18 +264,18 @@ async.each(formats, getFormatCSS, function(err) {
   }
 
   var downloadFont = function(obj, callback) {
-	if(obj.name.search("-Regular") < 0 ){
-		if(obj.name.search("-Bold") < 0 ){
-			if(obj.name.search("-Italic") < 0 ){
-				if(obj.name.search("-Bold-Italic") < 0 ){
-					var pieces = obj.name.split('.');
-					obj.name = pieces[0] + "-Regular." + pieces[1];
-				}
-			}
+    if(obj.name.search("-Regular") < 0 ){
+	if(obj.name.search("-Bold") < 0 ){
+	    if(obj.name.search("-Italic") < 0 ){
+		if(obj.name.search("-Bold-Italic") < 0 ){
+		    var pieces = obj.name.split('.');
+			obj.name = pieces[0] + "-Regular." + pieces[1];
 		}
+	    }
 	}
-    
-	var out = fs.createWriteStream(path.join(commander.destination, obj.name));
+    }
+
+    var out = fs.createWriteStream(path.join(commander.destination, obj.name));
 
     out.on("error", function(err) {
       callback(err);

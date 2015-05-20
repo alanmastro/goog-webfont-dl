@@ -1,6 +1,6 @@
 {
   "name": "goog-webfont-dl-regular",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A utility to download google webfonts to your local machine",
   "bin": {
     "goog-webfont-dl": "./index.js"
