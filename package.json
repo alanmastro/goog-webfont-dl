@@ -1,6 +1,6 @@
 {
-  "name": "goog-webfont-dl",
-  "version": "0.1.1",
+  "name": "goog-webfont-dl-regular",
+  "version": "0.1.2",
   "description": "A utility to download google webfonts to your local machine",
   "bin": {
     "goog-webfont-dl": "./index.js"
@@ -14,7 +14,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/jrnewell/goog-webfont-dl.git"
+    "url": "git://github.com/alanmastro/goog-webfont-dl.git"
   },
   "keywords": [
     "webfont",
@@ -24,10 +24,10 @@
     "ttf",
     "eot"
   ],
-  "author": "James Newell <james.newell@gmail.com>",
+  "author": "Marco Bicchi <marco.bicchi@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/jrnewell/goog-webfont-dl/issues"
+    "url": "https://github.com/alanmastro/goog-webfont-dl/issues"
   },
   "engines": {
     "node": ">=0.10",
